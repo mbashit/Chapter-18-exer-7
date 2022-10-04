@@ -25,22 +25,21 @@ int main()
 	cout << "enter currency in American Dollars";
 	cin >> dollars;
 
-	choice1 = dollars * 0.87;
-	choice2 = dollars * 0.78;
-	choice3 = dollars * 108.55;
-	choice4 = dollars * 1.33;
-
 	if (choice1 == "euro") {
+		choice1 = dollars * 0.87;
 		cout << " American dollars equals: " << choice1 << " Euros" << endl;
 	}
 	else if (choice2 == "GBP") {
+		choice2 = dollars * 0.78;
 		cout << "American dollars equals: " << choice2 << "GBP" << endl;
 	}
 	if (choice3 == "JPY") {
+		choice3 = dollars * 108.55;
 		cout << "American dollars equals: " << choice3 << "JPY" << endl;
 	}
 	
 	if (choice4 == "CAD") {
+		choice4 = dollars * 1.33;
 		cout << "American dollars quals: " << choice4 << "CAD" << endl;
 	}
 	return 0;
