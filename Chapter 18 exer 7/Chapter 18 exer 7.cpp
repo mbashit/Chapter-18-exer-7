@@ -14,33 +14,45 @@ $1 = ¥ 108.55 JPY
 $1 = 1.33 CAD ($)*/
 
 #include <iostream>
+#include<string.h>
+#include <ctime>
 using namespace std;
 
 int main()
 {
 	int dollars;
 	float EUR, GBP, JPY, CAD;
-	string choice1, choice2, choice3, choice4;
+	string choice;
 
-	cout << "enter currency in American Dollars";
+	cout << "enter the user choice: ";
+	cin >> choice;
+	cout << "enter amount in American Dollars";
 	cin >> dollars;
+	cout << "convert USD to EURO (EUR)";
+	cin >> EUR;
+	cout << "convert USD to GBP:";
+	cin >> GBP;
+	cout << "convert USD to JPY:";
+	cin >> JPY;
+	cout << "convert USD to CAD:";
+	cin >> CAD;
 
-	if (choice1 == "euro") {
-		choice1 = dollars * 0.87;
-		cout << " American dollars equals: " << choice1 << " Euros" << endl;
+	if (choice == "EUR") {
+		choice = dollars * 0.87;
+		cout << " American dollars equals: " << choice << " Euros" << endl;
 	}
-	else if (choice2 == "GBP") {
-		choice2 = dollars * 0.78;
-		cout << "American dollars equals: " << choice2 << "GBP" << endl;
+	else if (choice == "GBP") {
+		choice = dollars * 0.78;
+		cout << "American dollars equals: " << choice << "GBP" << endl;
 	}
-	if (choice3 == "JPY") {
-		choice3 = dollars * 108.55;
-		cout << "American dollars equals: " << choice3 << "JPY" << endl;
+	else if (choice == "JPY") {
+		choice = dollars * 108.55;
+		cout << "American dollars equals: " << choice << "JPY" << endl;
 	}
 	
-	if (choice4 == "CAD") {
-		choice4 = dollars * 1.33;
-		cout << "American dollars quals: " << choice4 << "CAD" << endl;
+	else  {
+		choice = dollars * 1.33;
+		cout << "American dollars quals: " << choice << "CAD" << endl;
 	}
 	return 0;
 }
